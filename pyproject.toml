@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-context-kit"
+version = "0.1.0"
+description = "Search local conversations across Claude Code, Codex and DeepSeek Harness."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["zstandard>=0.25,<1"]
+
+[project.scripts]
+agent-context = "agent_context_kit.cli:main"
+agent-context-skill = "agent_context_kit.install_skill:main"
+
+[tool.setuptools.package-data]
+agent_context_kit = ["SKILL.md"]
