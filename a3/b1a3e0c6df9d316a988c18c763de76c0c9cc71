@@ -1,0 +1,21 @@
+README.md
+  s_14decb0aa00309::t_6ea11f3162f28c 3,15,21
+src/agent_context_kit/SKILL.md
+  s_14decb0aa00309::t_6ea11f3162f28c 3,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.52-trip",
+  "base_commit_sha": "a3b1a3e0c6df9d316a988c18c763de76c0c9cc71",
+  "prompts": {},
+  "sessions": {
+    "s_14decb0aa00309": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a9eb-8dfa-7fc3-9314-4889b835f3f2",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "kp_chen <kp_chen@trip.com>"
+    }
+  }
+}
