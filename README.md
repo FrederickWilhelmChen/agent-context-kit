@@ -1,6 +1,6 @@
 # Agent Context Kit
 
-Pick up a conversation from another coding agent. Search a phrase you remember, find the original message, and read the turns around it. Works with local Claude Code, Codex and DeepSeek Harness histories, including DeepSeek super agent sessions.
+Ask “What did we decide about retries?” Your current agent can search conversations from every supported client on this machine, open the relevant exchange, and answer with the decision and its source. You only need to remember the topic. Works with local Claude Code, Codex and DeepSeek Harness histories, including DeepSeek super agent sessions.
 
 ## Install from this repository
 
@@ -12,13 +12,13 @@ agent-context-skill codex
 agent-context sync
 ```
 
-Use `agent-context-skill claude` or `agent-context-skill deepseek` to install the same skill for those clients. Start a new chat and ask “Use shared-context to find our earlier discussion about parser retries.” The CLI must be on the agent's PATH. The installer refuses to replace a different existing skill. Remove the installed SKILL.md before reinstalling an updated copy.
+Use `agent-context-skill claude` or `agent-context-skill deepseek` to install the same skill for those clients. Start a new chat and ask “Why did we choose three retries last time?” The CLI must be on the agent's PATH. The installer refuses to replace a different existing skill. Remove the installed SKILL.md before reinstalling an updated copy.
 
 ## Search and follow the evidence
 
 ```sh
 agent-context search 'parser retry'
-agent-context list --project example --provider deepseek
+agent-context list --project example
 agent-context read SOURCE_ID --start-line 12 --limit 5
 agent-context memory --query 'style'
 ```
